@@ -1,0 +1,70 @@
+Changelog cgi-challenge
+=======================
+
+
+Version 1.0.0    [05-Jan-2016]
+-------------
+
+git tag -a v1.0.0 -m "Version 1.0.0 - initial release"
+
+Updating c4f4f3b..8c28356
+Fast-forward
+Squash commit -- not updating HEAD
+ CMakeLists.txt                |  65 +++++++++++----
+ CTestConfig.cmake             |  15 ++++
+ README.md                     | 117 +++++++++++++++++++++++----
+ doc/Description_challange.pdf | Bin 33316 -> 0 bytes
+ doc/challenge_description.md  |  60 ++++++++++++++
+ doc/design_considerations.md  | 151 ++++++++++++++++++++++++++++++++++
+ doc/doxygen.conf.in           |   4 +-
+ doc/testdata.md               |  84 +++++++++++++++++++
+ src/CMakeLists.txt            |   7 +-
+ src/app/CMakeLists.txt        |  33 +++++++-
+ src/app/process_logs.cc       | 173 +++++++++++++++++++++++++++++++++++++++
+ src/lib/CMakeLists.txt        |  18 ++++-
+ src/lib/DateTime.cc           | 229 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/lib/DateTime.h            | 213 ++++++++++++++++++++++++++++++++++++++++++++++++
+ src/lib/Interval.h            |  95 ++++++++++++++++++++++
+ src/lib/LogData.cc            | 119 +++++++++++++++++++++++++++
+ src/lib/LogData.h             | 100 +++++++++++++++++++++++
+ src/lib/LogEntry.cc           |  52 ++++++++++++
+ src/lib/LogEntry.h            | 112 ++++++++++++++++++++++++++
+ src/lib/TimePoint.cc          |  17 ++++
+ src/lib/TimePoint.h           | 138 +++++++++++++++++++++++++++++++
+ src/test/CMakeLists.txt       |  13 +--
+ src/test/test_DateTime.cc     | 272 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/test/test_Interval.cc     | 182 +++++++++++++++++++++++++++++++++++++++++
+ src/test/test_LogData.cc      |  30 +++++++
+ src/test/test_LogEntry.cc     | 104 ++++++++++++++++++++++++
+ src/test/test_TimePoint.cc    |  89 ++++++++++++++++++++
+ testdata/testdata-case1.txt   |   4 +
+ testdata/testdata-case2.txt   |   2 +
+ testdata/testdata-case3.txt   |   2 +
+ testdata/testdata-case4.txt   |   3 +
+ testdata/testdata-case5.txt   |   3 +
+ 32 files changed, 2460 insertions(+), 46 deletions(-)
+  create mode 100644 CTestConfig.cmake
+ delete mode 100644 doc/Description_challange.pdf
+ create mode 100644 doc/challenge_description.md
+ create mode 100644 doc/design_considerations.md
+ create mode 100644 doc/testdata.md
+ create mode 100644 src/app/process_logs.cc
+ create mode 100644 src/lib/DateTime.cc
+ create mode 100644 src/lib/DateTime.h
+ create mode 100644 src/lib/Interval.h
+ create mode 100644 src/lib/LogData.cc
+ create mode 100644 src/lib/LogData.h
+ create mode 100644 src/lib/LogEntry.cc
+ create mode 100644 src/lib/LogEntry.h
+ create mode 100644 src/lib/TimePoint.cc
+ create mode 100644 src/lib/TimePoint.h
+ create mode 100644 src/test/test_DateTime.cc
+ create mode 100644 src/test/test_Interval.cc
+ create mode 100644 src/test/test_LogData.cc
+ create mode 100644 src/test/test_LogEntry.cc
+ create mode 100644 src/test/test_TimePoint.cc
+ create mode 100644 testdata/testdata-case1.txt
+ create mode 100644 testdata/testdata-case2.txt
+ create mode 100644 testdata/testdata-case3.txt
+ create mode 100644 testdata/testdata-case4.txt
+ create mode 100644 testdata/testdata-case5.txt
