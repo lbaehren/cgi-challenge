@@ -3,10 +3,11 @@
 # This software is distributed under the BSD 2-clause license.
 #-------------------------------------------------------------------------------
 
-add_definitions (-Wc++11-extensions)
-
 include_directories (${CMAKE_CURRENT_SOURCE_DIR}/lib)
 
 add_subdirectory (lib)
-add_subdirectory (test)
 add_subdirectory (app)
+
+if (ENABLE_TESTING AND Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE)
+    add_subdirectory (test)
+endif (ENABLE_TESTING AND Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE)
